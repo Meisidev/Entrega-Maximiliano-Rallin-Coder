@@ -63,7 +63,7 @@ header {
 main {
   grid-area: main;
 }
-.container {
+.contenedor {
   width: 80%;
   margin: 0 auto;
   max-width: 1320px;
@@ -266,7 +266,7 @@ iframe#ubimaps {
   display: block;
 }
 /* Pagina AYUDA */
-h3.container {
+h3.contenedor {
   padding-top: 2rem;
 }
 fieldset {
@@ -295,7 +295,7 @@ input[type="reset"] {
 input.textcamp {
   height: 2rem;
 }
-h3.container {
+h3.contenedor {
   font-size: 1.5rem;
 }
 #form {
@@ -406,7 +406,7 @@ img.bigsale {
   .card-image img {
     width: 100%;
   }
-  .container {
+  .contenedor {
     width: 100%;
     text-align: center;
     font-size: 1rem;
@@ -470,7 +470,7 @@ img.bigsale {
     display: block;
     margin: 1rem auto;
   }
-  h3.container {
+  h3.contenedor {
     font-size: 1.5rem;
   }
   /* media queries envios */
@@ -500,7 +500,7 @@ img.bigsale {
     text-align: center;
     font-size: 2rem;
   }
-  .container {
+  .contenedor {
     width: 100%;
     text-align: center;
     font-size: 1rem;
@@ -536,7 +536,7 @@ img.bigsale {
     display: block;
     margin: 1rem auto;
   }
-  h3.container {
+  h3.contenedor {
     font-size: 1.5rem;
   }
 }
