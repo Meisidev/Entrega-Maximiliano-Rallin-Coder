@@ -55,7 +55,7 @@ header {
   background-size: 850px;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 4;
   text-align: center;
   box-shadow: 1rem 1rem 1.5rem black;
   grid-area: header;
@@ -124,6 +124,9 @@ a {
   text-transform: uppercase;
   color: rgb(210, 226, 194);
 }
+.accordion {
+  margin: 2rem;
+}
 #intro {
   padding: 2rem 0 0 0;
 }
@@ -190,7 +193,7 @@ h3.redes {
 .slider-cont .button-holder {
   position: absolute;
   bottom: 0%;
-  left: 46%;
+  left: 48%;
 }
 .slider-cont .button-holder .dots {
   display: inline-block;
@@ -256,19 +259,7 @@ h3.redes {
 }
 /* Especifico para el resto de paginas
 /* Pagina ENVIOS */
-.tablaenvios {
-  margin: auto;
-  text-align: center;
-}
-table,
-th,
-td {
-  border: 5px solid;
-}
-th,
-td {
-  padding: 0.5rem;
-}
+
 .tituloenvio {
   text-align: center;
 }
@@ -323,6 +314,7 @@ h3.contenedor {
 /* Pagina BEBIDAS */
 .card-body {
   color: #0a0a09;
+  align-items: center;
 }
 .card-text {
   font-size: 1rem;
@@ -358,7 +350,7 @@ h2.faqtext {
 .grid__promo article {
   height: 100%;
 }
-.card {
+.card1 {
   color: white;
   display: flex;
   flex-direction: column;
@@ -367,6 +359,7 @@ h2.faqtext {
   text-align: center;
   border: 4px solid black;
   height: 100%;
+  background-color: brown;
 }
 .card-content__title {
   text-decoration: underline;
@@ -376,7 +369,6 @@ h2.faqtext {
 }
 .card-content__body {
   color: rgba(255, 255, 255, 0.8);
-  background-color: brown;
   padding: 0.5rem;
   height: 100%;
 }
@@ -492,9 +484,7 @@ img.bigsale {
     font-size: 1.5rem;
   }
   /* media queries envios */
-  table.tablaenvios {
-    height: 400px;
-    width: 320px;
+  .table {
     font-size: 1rem;
   }
   h1.tituloenvio {
@@ -508,6 +498,7 @@ img.bigsale {
     width: 80%;
   }
 }
+/* media querie hasta desktop */
 @media (max-width: 1200px) {
   .slider-cont .wrapper {
     width: 75vw;
@@ -556,5 +547,9 @@ img.bigsale {
   }
   h3.contenedor {
     font-size: 1.5rem;
+  }
+  /* media querie envios */
+  .table {
+    font-size: 1.3rem;
   }
 }
