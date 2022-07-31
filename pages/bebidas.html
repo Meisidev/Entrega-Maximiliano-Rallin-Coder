@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/style.css" />
+  
   <!-- FAVICON -->
   <link rel="shortcut icon" href="/Images/favicon beer.png" type="image/x-icon">
   <!-- GOOGLE SIMBOLS -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <!-- GOOGLE FONTS -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&family=Ubuntu:wght@400;700&display=swap"
-    rel="stylesheet">
   <!-- FONT AWESOME -->
   <script src="https://kit.fontawesome.com/6b604bf4cb.js" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <!-- GOOGLE FONTS -->
+  <link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&family=Ubuntu:wght@400;700&display=swap"
+  rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
   <title>Bebidas</title>
 </head>
 
@@ -54,41 +59,171 @@
   </header>
   <!-- FIN HEADER -->
   <!-- CONT PRINCIPAL -->
-  <!-- FUTURAS CAJAS DE GRID/FLEX CON EL CONTENIDO DE BEBIDAS CON OPCION PARA AGREGAR A CARRITO -->
+  <!-- FUTURAS CAJAS DE BOOTSTRAP CON EL CONTENIDO DE BEBIDAS CON OPCION PARA AGREGAR A CARRITO -->
   <main>
     <!-- LISTA -->
-    <section id="lista">
-      <div class="lista">
-        <span class="material-symbols-outlined"> sports_bar </span>
-        <h2>Cervezas</h2>
-        <ul class="bebidas">
-          <li>Rubia</li>
-          <li>Roja</li>
-          <li>IPA</li>
-          <li>APA</li>
-        </ul>
-        <span class="material-symbols-outlined"> wine_bar </span>
-        <h2>Vinos</h2>
-        <ul class="bebidas">
-          <li>Tinto</li>
-          <li>Blanco</li>
-          <li>Rosado</li>
-          <li>Espumante</li>
-        </ul>
-        <span class="material-symbols-outlined"> liquor </span>
-        <h2>Bebidas Espirituosas</h2>
-        <ul class="bebidas">
-          <li>Vodka</li>
-          <li>Licores</li>
-          <li>Whisky</li>
-          <li>Ron y Tequila</li>
-        </ul>
-        </ul>
+    <div class="container text-center">
+      <div class="row mt-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow">
+            <img src="/images/card1imgBeer1.5.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">$1500</h5>
+              <p class="card-text">
+                Six pack cerveza Los Andes roja.
+              </p>
+              <input class="btn btn-primary" type="button" value="Comprar" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow">
+            <img src="/images/card2imgBeer1.5.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">$1500</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nostrum?
+              </p>
+              <input class="btn btn-primary" type="button" value="Comprar" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow">
+            <img src="../images/card3imgBeer1.5.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">$1500</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nostrum?
+              </p>
+              <input class="btn btn-primary" type="button" value="Comprar" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow">
+            <img src="/images/card4imgBeer400.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">$350</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nostrum?
+              </p>
+              <input class="btn btn-primary" type="button" value="Comprar" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow">
+            <img src="/images/card5imgBeer430.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">$350</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nostrum?
+              </p>
+              <input class="btn btn-primary" type="button" value="Comprar" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow">
+            <img src="/images/card6imgBeer.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">$1000</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nostrum?
+              </p>
+              <input class="btn btn-primary" type="button" value="Comprar" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow">
+            <img src="/images/card1imgGin10k.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">$9000</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nostrum?
+              </p>
+              <input class="btn btn-primary" type="button" value="Comprar" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow">
+            <img src="/images/card2imgGin5.1.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">$5000</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nostrum?
+              </p>
+              <input class="btn btn-primary" type="button" value="Comprar" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow">
+            <img src="/images/card1imgVino4k.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">$4000</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nostrum?
+              </p>
+              <input class="btn btn-primary" type="button" value="Comprar" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow">
+            <img src="/images/card2imgVino2.7.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">$2700</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nostrum?
+              </p>
+              <input class="btn btn-primary" type="button" value="Comprar" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow">
+            <img src="/images/card3imgVino8.6.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">$8600</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nostrum?
+              </p>
+              <input class="btn btn-primary" type="button" value="Comprar" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow">
+            <img src="/images/card4imgvino.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">$3000</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nostrum?
+              </p>
+              <input class="btn btn-primary" type="button" value="Comprar" />
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   </main>
   <!-- FIN CONTENIDO -->
-  <br>
+  
   <!-- FOOTER-->
   <footer>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -108,6 +243,8 @@
           class="fa-brands fa-facebook"></i></a>
     </div>
   </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
