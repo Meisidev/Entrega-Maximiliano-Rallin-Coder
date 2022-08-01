@@ -311,6 +311,9 @@ h3.contenedor {
   text-align: center;
   padding-top: 2rem;
 }
+div.adjuntar {
+  margin: 1rem 25%;
+}
 /* Pagina BEBIDAS */
 .card-body {
   color: #0a0a09;
@@ -330,7 +333,10 @@ h1.faq {
   display: block;
   margin: 0 40% 0 40%;
 }
-h2.faqtext {
+h2.faquestion {
+  margin-top: 2rem;
+}
+h3.faqtext {
   padding: 3rem;
   margin-left: 20%;
   margin-right: 20%;
@@ -451,7 +457,7 @@ img.bigsale {
     display: inline-block;
     margin-bottom: 1.5rem;
   }
-  h2.faqtext {
+  h3.faqtext {
     font-size: 1rem;
     padding: 0;
     margin-left: 0;
@@ -482,6 +488,9 @@ img.bigsale {
   }
   h3.contenedor {
     font-size: 1.5rem;
+  }
+  div.adjuntar {
+    margin: 0.1rem;
   }
   /* media queries envios */
   .table {
@@ -547,6 +556,9 @@ img.bigsale {
   }
   h3.contenedor {
     font-size: 1.5rem;
+  }
+  div.adjuntar {
+    margin: 2rem 15%;
   }
   /* media querie envios */
   .table {
