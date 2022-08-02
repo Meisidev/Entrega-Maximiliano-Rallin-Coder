@@ -245,6 +245,9 @@ h3.redes {
   text-align: center;
   margin-bottom: 1rem;
 }
+div.container-g {
+  margin: 0.5rem 30%;
+}
 iframe#ubimaps {
   width: 800px;
   height: 500px;
@@ -478,12 +481,15 @@ img.bigsale {
   /* media queries envios */
   .table {
     font-size: 1rem;
-  } 
+  }
   h1.tituloenvio {
     font-size: 2rem;
   }
   h2.tituloenvio2 {
     font-size: 1.8rem;
+  }
+  div.container-g {
+    margin: 0.5rem auto;
   }
   /* media querie promo */
   .carousel-item {
