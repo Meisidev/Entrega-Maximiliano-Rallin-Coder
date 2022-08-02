@@ -26,30 +26,7 @@ body {
     "main"
     "footer";
 }
-/* GRID BODY INDEX */
-/* .body-index {
-  display: grid;
-  grid-gap: 0.5rem;
-  min-height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-} */
-/* GRID BODY PROMOS */
-/* .body-promos {
-  display: grid;
-  grid-gap: 0.5rem;
-  min-height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-} */
+
 header {
   background-image: url(../images/Fondo_alcohol.jpg);
   background-size: 850px;
@@ -277,9 +254,9 @@ iframe#ubimaps {
 h3.contenedor {
   padding-top: 2rem;
 }
-fieldset {
-  margin: 4% 30%;
-  font-size: 1.5rem;
+fieldset.form-alineado {
+  margin: 2rem 30%;
+  font-size: 1.2rem;
   border: 0.5rem solid rgb(128, 11, 108);
 }
 fieldset label {
@@ -297,7 +274,7 @@ textarea#mensaje {
 }
 fieldset input[type="submit"],
 input[type="reset"] {
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: block;
   margin: 1rem auto;
 }
@@ -312,7 +289,7 @@ h3.contenedor {
   padding-top: 2rem;
 }
 div.adjuntar {
-  margin: 1rem 25%;
+  margin: 2rem 30%;
 }
 /* Pagina BEBIDAS */
 .card-body {
@@ -323,23 +300,16 @@ div.adjuntar {
   font-size: 1rem;
 }
 /* Pagina FAQ */
-#faq {
+div#imgfaq {
   text-align: center;
 }
-h1.faq {
-  padding: 1rem;
-  margin-bottom: 2rem;
+h3.faqtitle {
   border-style: dashed;
   display: block;
-  margin: 0 40% 0 40%;
+  margin: 0 45% 0 45%;
 }
-h2.faquestion {
-  margin-top: 2rem;
-}
-h3.faqtext {
-  padding: 3rem;
-  margin-left: 20%;
-  margin-right: 20%;
+div.faqcontent {
+  margin: 1rem 10%;
 }
 /* Pagina PROMOS */
 .grid__promo {
@@ -399,11 +369,11 @@ img.bigsale {
 /* media queries mobile */
 @media (max-width: 480px) {
   body {
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto;
     grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer";
+      "header"
+      "main"
+      "footer";
   }
   header {
     display: flex;
@@ -449,23 +419,25 @@ img.bigsale {
   .img-foco {
     display: none;
   }
-  h1.faq {
+  h3.faqtitle {
     font-size: 2rem;
     padding: 0.3rem;
-    margin-bottom: 1rem;
+    margin: 1rem 15%;
     border-style: dashed;
     display: inline-block;
-    margin-bottom: 1.5rem;
   }
-  h3.faqtext {
-    font-size: 1rem;
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
+  section.faqcontent {
+    padding: 1rem;
+  }
+  div.faq {
+    font-size: 1.2rem;
+  }
+  p.titulofaq {
+    font-size: 1.5rem;
   }
   /* MEDIA QUERIE AYUDA */
-  fieldset {
-    margin: 5%;
+  fieldset.form-alineado {
+    margin: 1rem 0.5rem;
   }
   fieldset label {
     display: block;
@@ -489,8 +461,11 @@ img.bigsale {
   h3.contenedor {
     font-size: 1.5rem;
   }
-  div.adjuntar {
+  div.adjuntar.mb-3 {
     margin: 0.1rem;
+  }
+  label.form-label {
+    font-size: 1rem;
   }
   /* media queries envios */
   .table {
@@ -506,7 +481,6 @@ img.bigsale {
   img.bigsale {
     width: 80%;
   }
-}
 /* media querie hasta desktop */
 @media (max-width: 1200px) {
   .slider-cont .wrapper {
