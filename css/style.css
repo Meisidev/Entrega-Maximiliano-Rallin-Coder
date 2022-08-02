@@ -312,6 +312,12 @@ div.faqcontent {
   margin: 1rem 10%;
 }
 /* Pagina PROMOS */
+.carousel-item {
+  height: 55vh;
+}
+.slide{
+  margin-top: 2rem;
+}
 .grid__promo {
   padding: 1rem;
   display: grid;
@@ -478,10 +484,14 @@ img.bigsale {
     font-size: 1.8rem;
   }
   /* media querie promo */
+  .carousel-item {
+    height: auto;
+  }
   img.bigsale {
     width: 80%;
   }
-/* media querie hasta desktop */
+}
+/* media querie hasta desktop (md) */
 @media (max-width: 1200px) {
   .slider-cont .wrapper {
     width: 75vw;
@@ -504,7 +514,7 @@ img.bigsale {
     font-size: 5rem;
     margin-right: 1rem;
   }
-  /* media querie ayuda */
+  /* media querie md ayuda*/
   fieldset {
     margin: 5%;
     font-size: 1.5rem;
@@ -534,8 +544,12 @@ img.bigsale {
   div.adjuntar {
     margin: 2rem 15%;
   }
-  /* media querie envios */
+  /* media querie md envios */
   .table {
     font-size: 1.3rem;
+  }
+  /* media querie md promos */
+  .carousel-item {
+    height: auto;
   }
 }
