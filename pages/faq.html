@@ -5,15 +5,23 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <!-- FAVICON -->
-  <link rel="shortcut icon" href="/Images/favicon beer.png" type="image/x-icon" />
-  <!-- GOOGLE FONTS -->
+
   <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&family=Ubuntu:wght@400;700&display=swap"
-    rel="stylesheet" />
+  rel="shortcut icon"
+  href="../images/favicon_beer.png"
+  type="image/x-icon"
+ />
   <!-- FONT AWESOME -->
   <script src="https://kit.fontawesome.com/6b604bf4cb.js" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <!-- GOOGLE FONTS -->
+  <link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&family=Ubuntu:wght@400;700&display=swap"
+  rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
   <title>FAQ</title>
 </head>
 
@@ -21,7 +29,7 @@
   <!-- HEADER -->
   <header>
     <!-- LOGO -->
-    <div class="container">
+    <div class="contenedor">
       <a href="../index.html">
         <img src="../images/logo-liquor.png" alt="logo alcohol" class="logo" />
       </a>
@@ -52,17 +60,65 @@
   <!-- FIN HEADER -->
   <!-- CONT PRINCIPAL -->
   <main>
-    <section id="faq">
-      <img class="img-foco" src="../images/Innovation_Outline.png" alt="imagen preguntas" />
-      <img src="../images/Full_Inbox_Two Color.png" alt="buzon cartas lleno" />
-      <h1 class="faq">FAQ</h1>
-      <h2 class="faqtext">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rerum
-        numquam. Repellendus amet, saepe reiciendis quia quam voluptas
-        cupiditate dolores dicta dolorem aperiam enim mollitia atque voluptatem
-        delectus. Adipisci, eius.
-      </h2>
-    </section>
+    <div id="imgfaq">
+      <img class="img-foco" src="../Images/Innovation_Outline.png" alt="imagen preguntas" />
+      <img class= "img-faq" src="../Images/Full_Inbox_Two Color.png" alt="buzon cartas lleno" />
+    </div> 
+  
+    <!--Section: FAQ-->
+<section class="faqcontent">
+  <h3 class="faqtitle text-center mb-4 pb-2 text-primary fw-bold">FAQ</h3>
+  <p class="titulofaq text-center mb-5">
+    Abajo podes encontrar las respuestas a las preguntas mas frecuentes!
+  </p>
+
+  <div class="faq row">
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h4 class="mb-3 text-primary"><i class="far fa-paper-plane text-primary pe-2"></i> Utilizan primeras marcas para sus productos?</h4>
+      <p>
+        <strong><u>Por supuesto!</u></strong> Tenemos la suerte de estar trabajando con las mejores marcas del marcado para poder abarcar la mayor cantidad de opciones posibles,que todos los compradores esten conformes y puedan elegir entre muchas variedades.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h4 class="mb-3 text-primary"><i class="fas fa-pen-alt text-primary pe-2"></i> Es posible realizar algun producto a pedido?</h4>
+      <p>
+        <strong><u>Si, claro que es posible!</u></strong></u></strong> Siempre vamos a intentar que nuestros clientes consigan lo que estan buscando, por eso tenemos en nuestra pagina de ayuda algunos formularios para que puedan completar y requerir algun pedido en particular.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h4 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> Realizan envios a todo el pais?
+      </h4>
+      <p>
+        Actualmente realizamos envios a gran parte del pais salvo algunas excepciones como Tierra del Fuego, pronto habilitaremos la opcion para poder buscar el costo del envio por codigo postal y si el servicio llega.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h4 class="mb-3 text-primary"><i class="fas fa-rocket text-primary pe-2"></i> Question
+      </h4>
+      <p>
+        Yes. Go to the billing section of your dashboard and update your payment information.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h4 class="mb-3 text-primary"><i class="fas fa-home text-primary pe-2"></i> Se puede pagar via rapipago o pagofacil?
+      </h4>
+      <p><strong><u>Por el momento, no.</u></strong> En este instante no tenemos convenio con ciertas empresas procesadoras de pagos, pero los podemos llegar a sorprender en un futuro no muy lejano!</p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <h4 class="mb-3 text-primary"><i class="fas fa-book-open text-primary pe-2"></i> Another
+        question that is longer than usual</h4>
+      <p>
+        Of course! We’re happy to offer a free plan to anyone who wants to try our service.
+      </p>
+    </div>
+  </div>
+</section>
+
   </main>
   <!-- FIN CONT PRINCIPAL-->
   <!-- FOOTER-->
@@ -84,6 +140,8 @@
           class="fa-brands fa-facebook"></i></a>
     </div>
   </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
