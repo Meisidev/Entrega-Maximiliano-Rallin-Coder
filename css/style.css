@@ -64,6 +64,9 @@ a#title {
   animation-duration: 0.5s;
   font-family: "Ubuntu", sans-serif;
 }
+a#title:visited {
+  color: rgb(210, 226, 194);
+}
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -97,6 +100,7 @@ nav {
 a.nav__link:hover {
   background-color: aliceblue;
   color: #0a0a09;
+  transition: 0.8s;
 }
 .nav__item {
   padding: 1rem;
@@ -131,6 +135,7 @@ footer {
 }
 .redes-icons a:hover {
   color: aliceblue;
+  transition: 0.5s;
 }
 h3.redes {
   margin-bottom: 0;
@@ -269,6 +274,9 @@ fieldset label {
 fieldset input[type="text"] {
   width: 60%;
 }
+.tabnombre {
+  margin-top: 2rem;
+}
 select#formulario {
   width: 60%;
   height: 2rem;
@@ -284,6 +292,7 @@ input[type="reset"] {
 }
 input.textcamp {
   height: 2rem;
+  margin-bottom: 2rem;
 }
 h3.contenedor {
   font-size: 1.5rem;
@@ -526,6 +535,9 @@ img.bigsale {
   fieldset {
     margin: 5%;
     font-size: 1.5rem;
+  }
+  fieldset.form-alineado {
+    margin: 2rem 15%;
   }
   fieldset label {
     display: block;
