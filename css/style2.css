@@ -278,6 +278,70 @@ main .iframe-yt {
   font-size: 1rem;
 }
 
+/* pagina promos */
+.slide {
+  margin-top: 2rem;
+}
+.slide .carousel-item {
+  height: 55vh;
+}
+
+img.bigsale {
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 50%;
+  padding-top: 2rem;
+  margin: 3rem auto;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.grid__promo {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  max-width: 100%;
+  justify-items: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.grid__promo article {
+  height: 100%;
+}
+.grid__promo article .card1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+  text-align: center;
+  border: 4px solid black;
+  height: 100%;
+  background-color: brown;
+}
+.grid__promo article .card1 .card-content__title {
+  text-decoration: underline;
+  text-decoration-color: lightgray;
+  background-color: #0a0a09;
+  padding: 0.5rem;
+}
+.grid__promo article .card1 .card-content__body {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  height: 100%;
+}
+.grid__promo article .card1 .card-button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.2rem 1rem;
+  border-radius: 0.25rem;
+}
+
 /* pagina envios */
 .tituloenvio {
   text-align: center;
@@ -304,6 +368,20 @@ iframe#ubimaps {
   height: 500px;
   margin: 0 auto;
   display: block;
+}
+
+/* pagina faq */
+div#imgfaq {
+  text-align: center;
+}
+
+div.faqcontent {
+  margin: 1rem 10%;
+}
+div.faqcontent h3.faqtitle {
+  border-style: dashed;
+  display: block;
+  margin: 0 45% 0 45%;
 }
 
 /* pagina ayuda */
