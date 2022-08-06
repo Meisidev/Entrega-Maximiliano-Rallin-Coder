@@ -37,6 +37,64 @@ header {
   grid-area: header;
   position: relative;
 }
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px;
+  text-align: center;
+}
+img.logo {
+  height: 100px;
+  width: 100px;
+  padding-top: 1rem;
+  animation-name: aparecer;
+  animation-duration: 0.5s;
+}
+h1 {
+  padding: 1rem 0;
+  font-weight: bold;
+}
+a#title {
+  background-color: black;
+  border-style: double;
+  animation-name: aparecer;
+  animation-duration: 0.5s;
+  font-family: "Ubuntu", sans-serif;
+}
+a#title:visited {
+  color: rgb(210, 226, 194);
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(210, 226, 194);
+}
+nav {
+  grid-area: nav;
+  justify-content: center;
+}
+ul {
+  list-style-type: none;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  animation-name: aparecer;
+  animation-duration: 0.5s;
+}
+.nav__item {
+  padding: 1rem;
+}
+.nav__link {
+  background-color: black;
+  border-style: dashed;
+}
+a.nav__link:hover {
+  background-color: aliceblue;
+  color: #0a0a09;
+  transition: 0.8s;
+}
 /* searchbox */
 .searchBox {
   position: absolute;
@@ -80,40 +138,12 @@ header {
   width: 0px;
 }
 /* fin searchbox */
+/* main */
 main {
   grid-area: main;
 }
-.contenedor {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1320px;
-  text-align: center;
-}
-img.logo {
-  height: 100px;
-  width: 100px;
-  padding-top: 1rem;
-  animation-name: aparecer;
-  animation-duration: 0.5s;
-}
-h1 {
-  padding: 1rem 0;
-  font-weight: bold;
-}
-a#title {
-  background-color: black;
-  border-style: double;
-  animation-name: aparecer;
-  animation-duration: 0.5s;
-  font-family: "Ubuntu", sans-serif;
-}
-a#title:visited {
-  color: rgb(210, 226, 194);
-}
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: rgb(210, 226, 194);
+#intro {
+  padding: 2rem 0 0 0;
 }
 ol {
   list-style-type: none;
@@ -122,37 +152,8 @@ ol {
   margin-right: 25%;
   padding: 1rem;
 }
-ul {
-  list-style-type: none;
-}
-nav {
-  grid-area: nav;
-  justify-content: center;
-}
-.nav__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  animation-name: aparecer;
-  animation-duration: 0.5s;
-}
-.nav__link {
-  background-color: black;
-  border-style: dashed;
-}
-a.nav__link:hover {
-  background-color: aliceblue;
-  color: #0a0a09;
-  transition: 0.8s;
-}
-.nav__item {
-  padding: 1rem;
-}
 .accordion {
   margin: 2rem;
-}
-#intro {
-  padding: 2rem 0 0 0;
 }
 .iframe-yt {
   text-align: center;
@@ -284,7 +285,6 @@ h3.redes {
 }
 /* Especifico para el resto de paginas
 /* Pagina ENVIOS */
-
 .tituloenvio {
   text-align: center;
 }
@@ -308,6 +308,10 @@ iframe#ubimaps {
 }
 /* Pagina AYUDA */
 h3.contenedor {
+  padding-top: 2rem;
+}
+#form {
+  text-align: center;
   padding-top: 2rem;
 }
 fieldset.form-alineado {
@@ -343,10 +347,6 @@ input.textcamp {
 }
 h3.contenedor {
   font-size: 1.5rem;
-}
-#form {
-  text-align: center;
-  padding-top: 2rem;
 }
 div.adjuntar {
   margin: 2rem 30%;

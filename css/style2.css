@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+/* ANIMACIONES SLIDER */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  90% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* ANIMACION APARECER */
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(131, 179, 179);
+  line-height: 1.4;
+  background: linear-gradient(#3a1c71, #aa076b);
+  display: grid;
+  grid-gap: 0.5rem;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* header */
+header {
+  background-image: url(../images/Fondo_alcohol.jpg);
+  background-size: 850px;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  text-align: center;
+  box-shadow: 1rem 1rem 1.5rem black;
+  grid-area: header;
+  position: relative;
+}
+header .contenedor {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px;
+  text-align: center;
+  /* nav bar */
+  /* searchbox */
+}
+header .contenedor a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(210, 226, 194);
+}
+header .contenedor a img.logo {
+  height: 100px;
+  width: 100px;
+  padding-top: 1rem;
+  animation-name: aparecer;
+  animation-duration: 0.5s;
+}
+header .contenedor h1 {
+  padding: 1rem 0;
+  font-weight: bold;
+}
+header .contenedor h1 a#title {
+  background-color: black;
+  border-style: double;
+  animation-name: aparecer;
+  animation-duration: 0.5s;
+  font-family: "Ubuntu", sans-serif;
+}
+header .contenedor h1 a#title:visited {
+  color: rgb(210, 226, 194);
+}
+header .contenedor nav {
+  grid-area: nav;
+  justify-content: center;
+}
+header .contenedor nav .nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  animation-name: aparecer;
+  animation-duration: 0.5s;
+}
+header .contenedor nav .nav__list .nav__item {
+  padding: 1rem;
+}
+header .contenedor nav .nav__list .nav__item .nav__link {
+  background-color: black;
+  border-style: dashed;
+}
+header .contenedor nav .nav__list .nav__item .nav__link:hover {
+  background-color: aliceblue;
+  color: #0a0a09;
+  transition: 0.8s;
+}
+header .contenedor .searchBox {
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  transform: translate(-50%, 50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+}
+header .contenedor .searchBox:hover > .searchInput {
+  width: 180px;
+  padding: 0 6px;
+}
+header .contenedor .searchBox:hover > .searchButton {
+  background: white;
+  color: #2f3640;
+}
+header .contenedor .searchBox .searchButton {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+header .contenedor .searchBox .searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+/* main index */
+main {
+  grid-area: main;
+  /* SLIDER INDEX */
+}
+main .slider-cont {
+  position: relative;
+}
+main .slider-cont .wrapper {
+  width: 55vw;
+  height: 30vw;
+  border: 1px solid black;
+  margin: 3rem auto;
+  overflow: hidden;
+  box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.562);
+}
+main .slider-cont .wrapper .slider-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  height: 100%;
+  animation: slide 10s ease infinite;
+}
+main .slider-cont .wrapper .slider-holder #slider-image-1 {
+  background-color: lawngreen;
+  background: url(../images/slider1.jpg);
+  background-size: cover;
+}
+main .slider-cont .wrapper .slider-holder #slider-image-2 {
+  background-color: yellow;
+  background: url(../images/slider2.jpg);
+  background-size: cover;
+}
+main .slider-cont .wrapper .slider-holder #slider-image-3 {
+  background-color: tomato;
+  background: url(../images/slider3.jpg);
+  background-size: cover;
+}
+main .slider-cont .button-holder {
+  position: absolute;
+  bottom: 0%;
+  left: 48%;
+}
+main .slider-cont .button-holder .dots {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 3rem;
+  background-color: #af05c5;
+  margin: 0.4rem 0.3rem;
+}
+main #intro {
+  padding: 2rem 0 0 0;
+}
+main #intro .contenedor {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px;
+  text-align: center;
+}
+main #intro .contenedor ol {
+  list-style-type: none;
+  border-style: groove;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 1rem;
+}
+main #intro .accordion {
+  margin: 2rem;
+}
+main .iframe-yt {
+  text-align: center;
+  margin: 1.3rem;
+}
+
+/* pagina bebidas */
+.card-body {
+  color: #0a0a09;
+  align-items: center;
+}
+.card-body .card-text {
+  font-size: 1rem;
+}
+
+/* pagina envios */
+.tituloenvio {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+div.container-g {
+  margin: 0.5rem 30%;
+}
+
+.tituloenvio2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.h3ubi {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+iframe#ubimaps {
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* pagina ayuda */
+#form {
+  text-align: center;
+  padding-top: 2rem;
+}
+#form fieldset.form-alineado {
+  margin: 2rem 30%;
+  font-size: 1.2rem;
+  border: 0.5rem solid rgb(128, 11, 108);
+}
+#form fieldset.form-alineado label {
+  display: block;
+}
+#form fieldset.form-alineado .tabnombre {
+  margin-top: 2rem;
+}
+#form fieldset.form-alineado input.textcamp {
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+#form fieldset.form-alineado input[type=text] {
+  width: 60%;
+}
+#form fieldset.form-alineado select#formulario {
+  width: 60%;
+  height: 2rem;
+}
+#form fieldset.form-alineado textarea#mensaje {
+  width: 80%;
+}
+#form fieldset.form-alineado input[type=submit],
+#form fieldset.form-alineado input[type=reset] {
+  font-size: 1rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+h3.contenedor {
+  padding-top: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+div.adjuntar {
+  margin: 2rem 30%;
+}
+
+/* FOOTER */
+footer {
+  color: rgb(81, 62, 87);
+  text-align: center;
+  grid-area: footer;
+}
+footer .redes {
+  background-color: #e7008a;
+  margin-bottom: 0;
+}
+footer .redes-icons {
+  background-color: #e7008a;
+}
+footer .redes-icons a {
+  font-size: 2rem;
+  padding-right: 1rem;
+  color: rgb(81, 62, 87);
+}
+footer .redes-icons a:hover {
+  color: aliceblue;
+  transition: 0.5s;
+}
+
+/*# sourceMappingURL=style2.css.map */

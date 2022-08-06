@@ -1,0 +1,22 @@
+/* FOOTER */
+footer {
+    color: rgb(81, 62, 87);
+    text-align: center;
+    grid-area: footer;
+    .redes {
+        background-color: #e7008a;
+        margin-bottom: 0;
+        }
+    .redes-icons {
+        background-color: #e7008a;
+        a {
+            font-size: 2rem;
+            padding-right: 1rem;
+            color: rgb(81, 62, 87);
+            &:hover {
+                color: aliceblue;
+                transition: 0.5s;
+            }
+        }
+    }
+}

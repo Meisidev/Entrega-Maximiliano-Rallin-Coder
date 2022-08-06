@@ -1,0 +1,47 @@
+/* pagina ayuda */
+#form {
+    text-align: center;
+    padding-top: 2rem;
+    fieldset.form-alineado {
+        margin: 2rem 30%;
+        font-size: 1.2rem;
+        border: 0.5rem solid rgb(128, 11, 108);
+        label {
+            display: block;
+        }
+        .tabnombre {
+            margin-top: 2rem;
+        }
+        input.textcamp {
+            height: 2rem;
+            margin-bottom: 2rem;
+        }
+        input[type="text"] {
+            width: 60%;
+        }
+        select#formulario {
+            width: 60%;
+            height: 2rem;
+        }
+        textarea#mensaje {
+            width: 80%;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+        font-size: 1rem;
+        display: block;
+        margin: 1rem auto;
+        }
+    }
+}
+h3.contenedor {
+    padding-top: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1320px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+div.adjuntar {
+    margin: 2rem 30%;
+}

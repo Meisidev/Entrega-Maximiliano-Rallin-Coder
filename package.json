@@ -1,0 +1,20 @@
+{
+  "name": "entrega-maximiliano-rallin-coder",
+  "version": "1.0.0",
+  "description": "- Pruebo realizar revert en un commit antes de mergear.\r - Se realiza el merge del branch de las animaciones al main repo.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss/style.scss css/style2.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meisidev/Entrega-Maximiliano-Rallin-Coder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meisidev/Entrega-Maximiliano-Rallin-Coder/issues"
+  },
+  "homepage": "https://github.com/Meisidev/Entrega-Maximiliano-Rallin-Coder#readme"
+}
