@@ -17,7 +17,7 @@ header {
         a {
             text-decoration: none;
             text-transform: uppercase;
-            color: rgb(210, 226, 194);
+            color: $main-color;
             img.logo {
                 height: 100px;
                 width: 100px;
@@ -36,7 +36,7 @@ header {
                 animation-duration: 0.5s;
                 font-family: "Ubuntu", sans-serif;
                 &:visited {
-                    color: rgb(210, 226, 194);
+                    color: $main-color;
                 }
             }
         }

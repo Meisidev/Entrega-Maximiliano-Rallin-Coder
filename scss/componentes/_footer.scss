@@ -4,11 +4,11 @@ footer {
     text-align: center;
     grid-area: footer;
     .redes {
-        background-color: #e7008a;
+        background-color: $sec-color;
         margin-bottom: 0;
         }
     .redes-icons {
-        background-color: #e7008a;
+        background-color: $sec-color;
         a {
             font-size: 2rem;
             padding-right: 1rem;
