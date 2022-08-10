@@ -547,17 +547,17 @@ footer .redes-icons a:hover {
     margin: 0.1rem;
   }
   /* media queries envios */
-  .table {
-    font-size: 1rem;
-  }
   h1.tituloenvio {
     font-size: 2rem;
   }
-  h2.tituloenvio2 {
-    font-size: 1.8rem;
-  }
   div.container-g {
     margin: 0.5rem auto;
+  }
+  div.container-g .table {
+    font-size: 1rem;
+  }
+  h2.tituloenvio2 {
+    font-size: 1.8rem;
   }
   /* media querie promo */
   .slide {
@@ -573,15 +573,18 @@ footer .redes-icons a:hover {
     display: flex;
     flex-wrap: wrap;
   }
-  .card-image {
+  .grid__promo .card-image {
     width: 100%;
   }
-  .card-image img {
+  .grid__promo .card-image img {
     width: 100%;
   }
 }
 /* media querie hasta desktop (md) */
 @media (max-width: 1200px) {
+  .searchBox {
+    display: none;
+  }
   .slider-cont .wrapper {
     width: 75vw;
     height: 40vw;
@@ -591,9 +594,6 @@ footer .redes-icons a:hover {
     text-align: center;
     font-size: 2rem;
   }
-  .searchBox {
-    display: none;
-  }
   .contenedor {
     width: 100%;
     text-align: center;
@@ -602,36 +602,34 @@ footer .redes-icons a:hover {
   footer {
     font-size: xx-large;
   }
-  .redes-icons a {
+  footer .redes-icons a {
     font-size: 5rem;
     margin-right: 1rem;
   }
   /* media querie md ayuda*/
-  fieldset {
+  #form fieldset.form-alineado {
+    margin: 2rem 15%;
     margin: 5%;
     font-size: 1.5rem;
   }
-  fieldset.form-alineado {
-    margin: 2rem 15%;
-  }
-  fieldset label {
+  #form fieldset.form-alineado label {
     display: block;
   }
-  fieldset input[type=text] {
+  #form fieldset.form-alineado input[type=text] {
     width: 60%;
   }
-  select#formulario {
-    width: 60%;
-    height: 2rem;
-  }
-  textarea#mensaje {
-    width: 80%;
-  }
-  fieldset input[type=submit],
-input[type=reset] {
+  #form fieldset.form-alineado input[type=submit],
+#form fieldset.form-alineado input[type=reset] {
     font-size: 1.5rem;
     display: block;
     margin: 1rem auto;
+  }
+  #form fieldset.form-alineado select#formulario {
+    width: 60%;
+    height: 2rem;
+  }
+  #form fieldset.form-alineado textarea#mensaje {
+    width: 80%;
   }
   h3.contenedor {
     font-size: 1.5rem;
@@ -644,7 +642,7 @@ input[type=reset] {
     font-size: 1.3rem;
   }
   /* media querie md promos */
-  .carousel-item {
+  .slide .carousel-item {
     height: auto;
   }
 }
