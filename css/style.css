@@ -445,9 +445,9 @@ img.bigsale {
     display: flex;
     font-size: 1rem;
   }
-  .grid__promo {
-    display: flex;
-    flex-wrap: wrap;
+  main {
+    width: 100%;
+    text-align: center;
   }
   a#title {
     font-size: 2rem;
@@ -460,20 +460,10 @@ img.bigsale {
   .searchBox {
     display: none;
   }
-  .card-image {
-    width: 100%;
-  }
-  .card-image img {
-    width: 100%;
-  }
   .contenedor {
     width: 100%;
     text-align: center;
     font-size: 1rem;
-  }
-  main {
-    width: 100%;
-    text-align: center;
   }
   .iframe-yt iframe {
     width: 100%;
@@ -556,6 +546,16 @@ img.bigsale {
   }
   img.bigsale {
     width: 80%;
+  }
+  .grid__promo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-image {
+    width: 100%;
+  }
+  .card-image img {
+    width: 100%;
   }
 }
 /* media querie hasta desktop (md) */

@@ -457,4 +457,196 @@ footer .redes-icons a:hover {
   transition: 0.5s;
 }
 
+/* media queries mobile */
+@media (max-width: 480px) {
+  body {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
+  }
+  header {
+    display: flex;
+    font-size: 1rem;
+  }
+  header .contenedor {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+  header .contenedor a#title {
+    font-size: 2rem;
+  }
+  header .contenedor .nav__list {
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    padding-left: 0;
+  }
+  header .contenedor .searchBox {
+    display: none;
+  }
+  main {
+    width: 100%;
+    text-align: center;
+  }
+  main .iframe-yt iframe {
+    width: 100%;
+  }
+  footer .redes-icons a {
+    font-size: 4rem;
+    margin-right: 1rem;
+  }
+  /* MEDIA QUERIES FAQ */
+  .img-foco {
+    display: none;
+  }
+  section.faqcontent {
+    padding: 1rem;
+  }
+  section.faqcontent h3.faqtitle {
+    font-size: 2rem;
+    padding: 0.3rem;
+    margin: 1rem 15%;
+    border-style: dashed;
+    display: inline-block;
+  }
+  section.faqcontent p.titulofaq {
+    font-size: 1.5rem;
+  }
+  section.faqcontent div.faq {
+    font-size: 1.2rem;
+  }
+  /* MEDIA QUERIE AYUDA */
+  #form fieldset.form-alineado {
+    margin: 1rem 0.5rem;
+  }
+  #form fieldset.form-alineado label {
+    display: block;
+  }
+  #form fieldset.form-alineado input[type=text] {
+    width: 70%;
+  }
+  #form fieldset.form-alineado input[type=submit],
+#form fieldset.form-alineado input[type=reset] {
+    font-size: 2rem;
+    display: block;
+    margin: 1rem auto;
+  }
+  #form fieldset.form-alineado select#formulario {
+    width: 70%;
+    height: 2rem;
+  }
+  #form fieldset.form-alineado textarea#mensaje {
+    width: 80%;
+  }
+  #form fieldset.form-alineado label.form-label {
+    font-size: 1rem;
+  }
+  h3.contenedor {
+    font-size: 1.5rem;
+  }
+  div.adjuntar.mb-3 {
+    margin: 0.1rem;
+  }
+  /* media queries envios */
+  .table {
+    font-size: 1rem;
+  }
+  h1.tituloenvio {
+    font-size: 2rem;
+  }
+  h2.tituloenvio2 {
+    font-size: 1.8rem;
+  }
+  div.container-g {
+    margin: 0.5rem auto;
+  }
+  /* media querie promo */
+  .slide {
+    margin-top: 2rem;
+  }
+  .slide .carousel-item {
+    height: auto;
+  }
+  img.bigsale {
+    width: 80%;
+  }
+  .grid__promo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-image {
+    width: 100%;
+  }
+  .card-image img {
+    width: 100%;
+  }
+}
+/* media querie hasta desktop (md) */
+@media (max-width: 1200px) {
+  .slider-cont .wrapper {
+    width: 75vw;
+    height: 40vw;
+  }
+  main {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .searchBox {
+    display: none;
+  }
+  .contenedor {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+  footer {
+    font-size: xx-large;
+  }
+  .redes-icons a {
+    font-size: 5rem;
+    margin-right: 1rem;
+  }
+  /* media querie md ayuda*/
+  fieldset {
+    margin: 5%;
+    font-size: 1.5rem;
+  }
+  fieldset.form-alineado {
+    margin: 2rem 15%;
+  }
+  fieldset label {
+    display: block;
+  }
+  fieldset input[type=text] {
+    width: 60%;
+  }
+  select#formulario {
+    width: 60%;
+    height: 2rem;
+  }
+  textarea#mensaje {
+    width: 80%;
+  }
+  fieldset input[type=submit],
+input[type=reset] {
+    font-size: 1.5rem;
+    display: block;
+    margin: 1rem auto;
+  }
+  h3.contenedor {
+    font-size: 1.5rem;
+  }
+  div.adjuntar {
+    margin: 2rem 15%;
+  }
+  /* media querie md envios */
+  .table {
+    font-size: 1.3rem;
+  }
+  /* media querie md promos */
+  .carousel-item {
+    height: auto;
+  }
+}
+
 /*# sourceMappingURL=style2.css.map */
