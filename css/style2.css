@@ -171,15 +171,15 @@ header .contenedor .searchBox:hover > .searchButton {
   color: #2f3640;
 }
 header .contenedor .searchBox .searchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   float: right;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: #2f3640;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 0.4s;
 }
 header .contenedor .searchBox .searchInput {
@@ -246,7 +246,7 @@ main .slider-cont .button-holder .dots {
   margin: 0.4rem 0.3rem;
 }
 main #intro {
-  padding: 2rem 0 0 0;
+  padding-top: 2rem;
 }
 main #intro .contenedor {
   width: 80%;
@@ -297,20 +297,20 @@ img.bigsale {
 }
 
 .grid__promo {
-  padding: 1rem;
+  padding: 8rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 4rem;
   max-width: 100%;
   justify-items: center;
   align-items: center;
   font-size: 1rem;
 }
-.grid__promo article {
+.grid__promo article, .grid__promo article .card1 .card-content__body, .grid__promo article .card1 .card-content__body .card1, .grid__promo article .card1 {
   height: 100%;
 }
-.grid__promo article .card1 {
+.grid__promo article .card1, .grid__promo article .card1 .card-content__body .card1 {
   color: white;
   display: flex;
   flex-direction: column;
@@ -318,7 +318,6 @@ img.bigsale {
   border-radius: 1rem;
   text-align: center;
   border: 4px solid black;
-  height: 100%;
   background-color: brown;
 }
 .grid__promo article .card1 .card-content__title {
@@ -330,7 +329,6 @@ img.bigsale {
 .grid__promo article .card1 .card-content__body {
   color: rgba(255, 255, 255, 0.8);
   padding: 0.5rem;
-  height: 100%;
 }
 .grid__promo article .card1 .card-button {
   cursor: pointer;
@@ -572,6 +570,7 @@ footer .redes-icons a:hover {
   .grid__promo {
     display: flex;
     flex-wrap: wrap;
+    padding: 3rem;
   }
   .grid__promo .card-image {
     width: 100%;
@@ -644,6 +643,15 @@ footer .redes-icons a:hover {
   /* media querie md promos */
   .slide .carousel-item {
     height: auto;
+  }
+  .grid__promo {
+    padding: 3rem;
+  }
+}
+/* media querie searchbox */
+@media (max-width: 2300px) {
+  .searchBox {
+    display: none;
   }
 }
 

@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Meisidev/Entrega-Maximiliano-Rallin-Coder/issues"
   },
-  "homepage": "https://github.com/Meisidev/Entrega-Maximiliano-Rallin-Coder#readme"
+  "homepage": "https://github.com/Meisidev/Entrega-Maximiliano-Rallin-Coder#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
 }

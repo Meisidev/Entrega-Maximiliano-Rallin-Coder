@@ -15,11 +15,11 @@ img.bigsale {
     max-height: 400px;
 }
 .grid__promo {
-    padding: 1rem;
+    padding: 8rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 1fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: 4rem;
     max-width: 100%;
     justify-items: center;
     align-items: center;
@@ -27,6 +27,7 @@ img.bigsale {
     article {
         height: 100%;
         .card1 {
+            @extend article;
             color: white;
             display: flex;
             flex-direction: column;
@@ -34,7 +35,6 @@ img.bigsale {
             border-radius: 1rem;
             text-align: center;
             border: 4px solid black;
-            height: 100%;
             background-color: brown;
             .card-content__title {
                 text-decoration: underline;
@@ -43,9 +43,9 @@ img.bigsale {
                 padding: 0.5rem;
             }
             .card-content__body {
+                @extend article;
                 color: rgba(255, 255, 255, 0.8);
                 padding: 0.5rem;
-                height: 100%;
             }
             .card-button {
                 cursor: pointer;
