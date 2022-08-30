@@ -6,3 +6,15 @@
         font-size: 1rem;
     }
 }
+.card-color {
+    background-color: map-get($grays, "500");
+    
+}
+div.container {
+    .drinkcont {
+        .drinkbox { 
+            padding: 4rem;
+            
+        }
+    }
+}

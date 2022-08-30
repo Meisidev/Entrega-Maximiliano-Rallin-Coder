@@ -41,8 +41,13 @@
     }
   }
   /* MEDIA QUERIES FAQ */
-  .img-foco {
-    display: none;
+  div#imgfaq {
+    .img-faq {
+    height: 37vw;
+    }
+    .img-foco {
+    height: 50vw;
+    }
   }
   section.faqcontent {
     padding: 1rem;
@@ -128,6 +133,15 @@
       }
     }
   }
+  /* media queries bebidas */
+  div.container {
+    .drinkcont {
+        .drinkbox { 
+            padding: 1rem 0.5rem;
+            
+        }
+    }
+  }
 }
 /* media querie hasta desktop (md) */
 @media (max-width: 1200px) {
@@ -200,6 +214,10 @@
   }
   .grid__promo {
     padding: 3rem;
+  }
+  /* media querie md faq */
+  .faqparraf {
+    font-size: 1.3rem;
   }
 }
 /* media querie searchbox */
